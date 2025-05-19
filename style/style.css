@@ -1,1 +1,232 @@
-/* BLANK */
+/* importing the Lexend font from google. */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
+/* Utilities */
+
+/* create a flex row */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* horizontally center the content in a flex row */
+.flex-rhc {
+    justify-content: center;
+}
+
+/* left align the content in a flex row */
+.flex-ral {
+    justify-content: flex-start;
+}
+
+/* right align the content in a flex row */
+.flex-rar {
+    justify-content: flex-end;
+}
+
+/* vertically center the content in a flex row */
+.flex-rvc {
+    align-items: center;
+}
+
+/* top align the content in a flex row */
+.flex-rat {
+    align-items: flex-start;
+}
+
+/* bottom align the content in a flex row */
+.flex-rab {
+    align-items: flex-end;
+}
+
+/* create a flex column */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* vertically center the content in a flex column */
+.flex-cvc {
+    justify-content: center;
+}
+
+/* top align the content in a flex column */
+.flex-cat {
+    justify-content: flex-start;
+}
+
+/* bottom align the content in a flex column */
+.flex-cab {
+    justify-content: flex-end;
+}
+
+/* horizontally center the content in a flex column */
+.flex-chc {
+    align-items: center;
+}
+
+/* left align the content in a flex column */
+.flex-cal {
+    align-items: flex-start;
+}
+
+/* right align the content in a flex column */
+.flex-car {
+    align-items: flex-end;
+}
+
+.flex-fill {
+    flex: 1;
+}
+
+
+/* Text alignment */
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-pad-1vh {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.text-pad-1vw {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+
+
+/* Borders */
+
+.border-tb {
+    border-style: solid;
+    border-width: 25px 0px;
+    border-color: red;
+}
+
+.border-lr {
+    border-style: solid;
+    border-width: 0px 25px;
+    border-color: red;
+}
+
+.border-all {
+    border-style: solid;
+    border-width: 25px 25px;
+    border-color: red;
+}
+
+
+
+
+.container {
+    max-width: 80vw;
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: aqua;
+}
+
+
+
+/* General formatting */
+
+/* * {
+
+} */
+
+body {
+    margin: 0; /* CSS reset */
+    padding: 0;
+    font-family: "Lexend", Verdana, Tahoma, "Century Gothic", Trebuchet, Calibri, "Open Sans", Arial, sans-serif; /* dyslexia friendly fonts as recommended by the British Dyslexia Association. */
+    line-height: 32px; /* increased line spacing as recommended by the British Dyslexia Association. */
+    background-color: #f5f5f5;
+}
+
+nav {
+    /* width: 100vw; */
+    background-color: #5e0dc7;
+}
+
+/* Header */
+header {
+    min-height: 100vh;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* padding: 10px; */
+}
+
+#navbar a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar ul li {
+    display: block;
+    padding: 20px;
+    font-size: 24px;
+
+    &:hover {
+    background-color: #5A4080;
+    }
+}
+
+/* Hero section */
+
+
+/* Info section */
+
+/* #info {
+    width: 100vw;
+} */
+
+/* Main section */
+
+main div {
+    min-width: 50vh;
+    min-height: 80vh;
+    border-style: solid;
+    border-width: 25px 25px;
+    border-color: navy;
+    flex: 1;
+}
+
+/* #test {
+    min-height: 40vh;
+    min-width: 50vh;
+} */
+
+main img {
+    min-height: 100%;
+}
+
+/* footer section */
+
+footer ul li {
+    display: block;
+    padding-right: 2vw;
+    padding-bottom: 0vh;
+}
