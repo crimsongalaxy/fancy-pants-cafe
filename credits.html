@@ -8,26 +8,31 @@
     <!-- This is the title that will appear on the browser tab. -->
     <title>Credits</title>
 </head>
-<body>
+<body class="flex-column">
     <!-- Page Header -->
-    <header>
+    <header class="flex-column">
         <!-- Navbar -->
-        <nav id="" class="">
-            <div>
-            <a href="./index.html"><span id="logo"><img src="./img/place-holder.jpg" alt="Fancy Pants Cafe"></span></a>
-            </div>
-            <div>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
+        <nav class="flex-row flex-rhc">
+            <div id="navbar" class="flex-row flex-rvc container">
+                <!-- Logo -->
+                <div>
+                    <a href="./index.html"><span id="logo"><img src="./img/place-holder-logo.jpg" alt="Fancy Pants Cafe"></span></a>
+                </div>
+                <!-- Nav buttons -->
+                <div>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- end of the nav buttons -->
             </div>
         </nav>
         <!-- end of the navbar -->
 
         <!-- Hero -->
-        <div>
+        <div class="flex-column flex-chc flex-cvc flex-fill">
             <a href="#">
                 <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
             </a>
@@ -35,12 +40,14 @@
         <!-- end of the hero div -->
 
         <!-- Info -->
-        <div>
-            <h1>Credit where credit is due!</h1>
-            <p>This cafe couldn't possibly be as fancy as it is without the art that decorates the empty space. Below are all the images used to make our pants fancy. Please click on an image to be taken to the page from which the images were sourced and information about the artists can be found.</p>
-            <p>Thank you to the artists who have been kind enough to make their work available for use by myself and many others.</p>
+        <div class="flex-column flex-chc">
+            <div class="container text-center">
+                <h1>Credit where credit is due!</h1>
+                <p>This cafe couldn't possibly be as fancy as it is without the art that decorates the empty space. Below are all the images used to make our pants fancy. Please click on an image to be taken to the page from which the images were sourced and information about the artists can be found.</p>
+                <p>Thank you to the artists who have been kind enough to make their work available for use by myself and many others.</p>
+            </div>
+            <!-- end of the about div -->
         </div>
-        <!-- end of the about div -->
     </header>
 
     <!-- Main Body of what is on the page. -->
@@ -52,7 +59,7 @@
     <footer>
         <!-- Upper footer -->
         <div class="flex-row flex-rhc border-tb">
-            <h3>488 South Road, Moorabbin | email@placeholder.com | (03) 9876 6789
+            <h3>488 South Road, Moorabbin | email@placeholder.com | (03) 555-6789
             </h3>
         </div>
         <!-- end of the upper footer div -->
