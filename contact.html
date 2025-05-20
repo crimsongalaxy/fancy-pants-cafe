@@ -8,26 +8,31 @@
     <!-- This is the title that will appear on the browser tab. -->
     <title>Contact</title>
 </head>
-<body>
+<body class="flex-column">
     <!-- Page Header -->
-    <header>
+    <header class="flex-column">
         <!-- Navbar -->
-        <nav id="" class="">
-            <div>
-            <a href="./index.html"><span id="logo"><img src="./img/place-holder.jpg" alt="Fancy Pants Cafe"></span></a>
-            </div>
-            <div>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
+        <nav class="flex-row flex-rhc">
+            <div id="navbar" class="flex-row flex-rvc container">
+                <!-- Logo -->
+                <div>
+                    <a href="./index.html"><span id="logo"><img src="./img/place-holder-logo.jpg" alt="Fancy Pants Cafe"></span></a>
+                </div>
+                <!-- Nav buttons -->
+                <div>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- end of the nav buttons -->
             </div>
         </nav>
         <!-- end of the navbar -->
 
         <!-- Hero -->
-        <div>
+        <div class="flex-column flex-chc flex-cvc flex-fill">
             <a href="#">
                 <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
             </a>
@@ -35,11 +40,12 @@
         <!-- end of the hero div -->
 
         <!-- Info -->
-        <div>
-            <h1>Where for art thou?</h1>
-            <p>To find us you need to follow the second star to the right, and continue straight on until morning.</p>
-            <p>Or... look at the map below. It's not as interesting but it's probably more useful.</p>
-            <p>Beware of ninjas. Good luck, traveler!</p>
+        <div id="info" class="flex-row flex-rhc border-tb">
+            <div class="container text-center">
+                <h1>Welcome to Fancy Pants Cafe!</h1>
+                <p>We are an imaginary cafe in the heart of room 1.116 of Holmesglen Institute's Moorabbin campus. Born from the need to complete an assessment task we were thought into existence by Robert Warrandyte in an attempt to satisfy their academic overlord's completely reasonable expectations.</p>
+                <p>Since then we have grown into a comfy and cozy hideaway for all manner of folk from gnomes and elves to druids and warlocks, and everyone in-between, who find themselves seeking a respite from the daily grind.</p>
+            </div>
         </div>
         <!-- end of the about div -->
     </header>
@@ -47,61 +53,79 @@
     <!-- Main Body of what is on the page. -->
     <main>
         <!-- Contact -->
-        <div>
-            <!-- image -->
-            <div>
-            <!-- This is where the interactive map will go -->
-            <a href="#">
-                <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-            </a>
+        <div class="flex-column flex-chc">
+            <div class="flex-row">
+                <!-- map -->
+                <div id="contact-map">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6293.433109840171!2d145.0505929!3d-37.9370517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66d8a7707e59d%3A0x4eaf69b9bc8957d9!2sHolmesglen%20Institute%20Moorabbin%20campus!5e0!3m2!1sen!2sau!4v1747709909005!5m2!1sen!2sau"
+                    width="600"
+                    height="600"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <!-- text -->
+                <div class="flex-row">
+                    <div id="contact-info">
+                        <h2>Land ho!</h2>
+                        <p>You can find Fancy Pants Cafe at:</p>
+                        <p>488 South Road, Moorabbin</p>
+                        <p>Or you can email us at:</p>
+                        <p>email@placeholder.com</p>
+                        <p>And for the bravest among you, here's our phone number. But, be warned: a real person may answer the phone and you will have to speak to them...</p>
+                        <p>(03) 555-6789</p>
+                    </div>
+                    <div id="contact-hours">
+                        <h2>Open hours:</h2>
+                        <p>7am - 8pm</p>
+                        <p>(everyday, except public holidays)</p>
+                        <!-- button -->
+                        <div class="">
+                            <a href="./contact.html">Find Us</a> 
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- text -->
-            <div>
-                <h2>Land ho!</h2>
-                <p>Address: 488 South Road, Moorabbin | email@placeholder.com | (03) 9876 6789</p>
+            <div class="container text-center">
                 <p>Limited on-site parking is available but it can fill-up fast! All parking is metred parking which can be paid for either by app or at the machine. Detailed instructions are available on-site. See signage for further information.</p>
                 <p>Beware of pirates, and the minotaur who wanders the catacombs. If the minotaur should corner you, play them a soothing tune to lull them into a tranquil sleep. </p>
                 <p>Good luck, traveler!</p>
-                <p>Open hours:</p>
-                <p>7am - 8pm</p>
-                <p>(everyday, except public holidays)</p>
-                <!-- button -->
-                <div class="">
-                    <a href="./contact.html">Find Us</a> 
-                </div>
             </div>
         </div>
         <!-- end of the contacts div -->
-        
         <!-- Menu -->
-        <div>
+        <div class="flex-row flex-rhc primary">
             <div>
-                <h2>Winter is coming... and so is our new menu!</h2>
-                <p>See what's new in our seasonally updated menu with our wicked winter treats.</p>
-                <!-- Button -->
-                <div class="">
-                    <a href="./menu.html">Menu</a> 
-                </div>
-            <div>
+                <!-- image -->
                 <a href="#">
                     <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
                 </a>
             </div>
+            <div class="text-center">
+                <!-- text -->
+                <h2>Winter is coming... and so is our new menu!</h2>
+                <p>See what's new in our seasonally updated menu with our wicked winter treats.</p>
+                <!-- Button -->
+                <a href="./menu.html">Menu</a>
             </div>
         </div>
         <!-- end of the menu div -->
 
         <!-- Events -->
-        <div>
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
-            <div>
+        <div class="flex-row flex-rhc primary">
+            <div class="text-center">
+                <!-- text -->
                 <h2>Events and functions</h2>
                 <p>Our events and function room is currently undergoing renovations and is not available for bookings at this time.</p>
                 <!-- Button ??? -->
             </div>
+            <div>
+                <!-- image -->
+                <a href="#">
+                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+                </a>
             </div>
         </div> 
         <!-- end of the events div -->
@@ -112,7 +136,7 @@
     <footer>
         <!-- Upper footer -->
         <div class="flex-row flex-rhc border-tb">
-            <h3>488 South Road, Moorabbin | email@placeholder.com | (03) 9876 6789
+            <h3>488 South Road, Moorabbin | email@placeholder.com | (03) 555-6789
             </h3>
         </div>
         <!-- end of the upper footer div -->

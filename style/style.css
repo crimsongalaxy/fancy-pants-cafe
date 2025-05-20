@@ -258,6 +258,45 @@ header {
     min-width: 30vh;
     padding: 1vh;
 }
+
+
+/* Contact section */
+
+/* #contact-map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+} */
+
+
+#contact-map {
+    min-width: 40vw;
+    overflow: ;
+    
+}
+
+#contact-info {
+    min-width: 20vw;
+}
+
+#contact-hours {
+    min-width: 20vw;
+}
+
+
+
+
+
 /* footer section */
 
 .footer-edge {
@@ -266,8 +305,11 @@ header {
 
 .footer-mid {
     min-width: 60vw;
-    flex: 1;
 }
+
+/* #credits {
+
+} */
 
 footer ul li {
     display: block;
