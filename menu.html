@@ -8,26 +8,31 @@
     <!-- This is the title that will appear on the browser tab. -->
     <title>Menu</title>
 </head>
-<body>
+<body class="flex-column">
     <!-- Page Header -->
-    <header>
+    <header class="flex-column">
         <!-- Navbar -->
-        <nav id="" class="">
-            <div>
-            <a href="./index.html"><span id="logo"><img src="./img/place-holder.jpg" alt="Fancy Pants Cafe"></span></a>
-            </div>
-            <div>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
+        <nav class="flex-row flex-rhc">
+            <div id="navbar" class="flex-row flex-rvc container">
+                <!-- Logo -->
+                <div>
+                    <a href="./index.html"><span id="logo"><img src="./img/place-holder-logo.jpg" alt="Fancy Pants Cafe"></span></a>
+                </div>
+                <!-- Nav buttons -->
+                <div>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- end of the nav buttons -->
             </div>
         </nav>
         <!-- end of the navbar -->
 
         <!-- Hero -->
-        <div>
+        <div class="flex-column flex-chc flex-cvc flex-fill">
             <a href="#">
                 <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
             </a>
@@ -35,10 +40,12 @@
         <!-- end of the hero div -->
 
         <!-- Info -->
-        <div>
-            <h1>Winter is coming... and so is our new menu!</h1>
-            <p>xxx</p>
-            <p>xxx</p>
+        <div id="info" class="flex-row flex-rhc border-tb">
+            <div class="container text-center">
+                <h1>Welcome to Fancy Pants Cafe!</h1>
+                <p>We are an imaginary cafe in the heart of room 1.116 of Holmesglen Institute's Moorabbin campus. Born from the need to complete an assessment task we were thought into existence by Robert Warrandyte in an attempt to satisfy their academic overlord's completely reasonable expectations.</p>
+                <p>Since then we have grown into a comfy and cozy hideaway for all manner of folk from gnomes and elves to druids and warlocks, and everyone in-between, who find themselves seeking a respite from the daily grind.</p>
+            </div>
         </div>
         <!-- end of the about div -->
     </header>
@@ -46,238 +53,215 @@
     <!-- Main Body of what is on the page. -->
     <main>
         <!-- Menu -->
-        <div>
-            <!-- menu item 01 -->
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
+        <div class="flex-row">
+            <div class="flex-column">
+                <!-- menu item 01 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image">
+                        <a href="#">
+                            <img src="./img/place-holder-logo.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <h2>Item Name</h2>
+                        <p>Brief description</p>
+                    </div>
+                </div>
+                <!-- end of menu item 01 -->
+                
+                <!-- menu item 02 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text">
+                        <h2>Item Name</h2>
+                        <p>Brief description</p>
+                    </div>
+                    <div class="menu-image">
+                        <a href="#">
+                            <img src="./img/place-holder-logo.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of menu item 02 -->
+                
+                <!-- menu item 03 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image"
+                        <a href="#">
+                            <img src="./img/place-holder-logo.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <h2>Item Name</h2>
+                        <p>Brief description</p>
+                    </div>
+                </div>
+                <!-- end of menu item 03 -->
+                
+                <!-- menu item 04 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text">
+                        <h2>Item Name</h2>
+                        <p>Brief description</p>
+                    </div>
+                    <div class="menu-image">
+                        <a href="#">
+                            <img src="./img/place-holder-logo.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of menu item 04 -->
             </div>
-            <div>
-                <h2>Item Name</h2>
-                <p>Brief description</p>
-            </div>
-            <!-- end of menu item 01 -->
-            
-            <!-- menu item 02 -->
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
-            </div>
-            <div>
-                <h2>Item Name</h2>
-                <p>Brief description</p>
-            </div>
-            <!-- end of menu item 02 -->
-            
-            <!-- menu item 03 -->
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
-            </div>
-            <div>
-                <h2>Item Name</h2>
-                <p>Brief description</p>
-            </div>
-            <!-- end of menu item 03 -->
 
 
 
-            <!-- ROW BREAK 1/2 -->
-            
-
-
-            <!-- menu item 04 -->
-            <div>
-                <h2>Item Name</h2>
-                <p>Brief description</p>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
-            </div>
-            <!-- end of menu item 04 -->
-            
-            <!-- menu item 05 -->
-            <div>
-                <h2>Item Name</h2>
-                <p>Brief description</p>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
-            </div>
-            <!-- end of menu item 05 -->
-            
-            <!-- menu item 06 -->
-            <div>
-                <h2>Item Name</h2>
-                <p>Brief description</p>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
-            </div>
-            <!-- end of menu item 06 -->
-
-
-
-            <!-- ROW BREAK 2/3 -->
-
-
-
-            <!-- menu item 07 -->
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
-            </div>
-            <div>
-                <h2>Item Name</h2>
-                <p>Brief description</p>
-            </div>
-            <!-- end of menu item 07 -->
-            
-            <!-- menu item 08 -->
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
-            </div>
-            <div>
-                <h2>Item Name</h2>
-                <p>Brief description</p>
-            </div>
-            <!-- end of menu item 08 -->
-            
-            <!-- menu item 09 -->
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
-            </div>
-            <div>
-                <h2>Item Name</h2>
-                <p>Brief description</p>
-            </div>
-            <!-- end of menu item 09 -->
+            <!-- COLUMN BREAK 1/2 -->
             
 
+            <div class="flex-column">
+                <!-- menu item 05 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image">
+                        <a href="#">
+                            <img src="./img/place-holder-logo.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <h2>Item Name</h2>
+                        <p>Brief description</p>
+                    </div>
+                </div>
+                <!-- end of menu item 05 -->
+                
+                <!-- menu item 06 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text">
+                        <h2>Item Name</h2>
+                        <p>Brief description</p>
+                    </div>
+                    <div class="menu-image">
+                        <a href="#">
+                            <img src="./img/place-holder-logo.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of menu item 06 -->
+                
+                <!-- menu item 07 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image">
+                        <a href="#">
+                            <img src="./img/place-holder-logo.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <h2>Item Name</h2>
+                        <p>Brief description</p>
+                    </div>
+                </div>
+                <!-- end of menu item 07 -->
+                
+                <!-- menu item 08 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text">
+                        <h2>Item Name</h2>
+                        <p>Brief description</p>
+                    </div>
+                    <div class="menu-image">
+                        <a href="#">
+                            <img src="./img/place-holder-logo.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of menu item 08 -->
+            </div>
 
-            <!-- ROW BREAK 3/4 -->
+
+
+            <!-- COLUMN BREAK 2/3 -->
+
+
+            <div class="flex-column">
+                <!-- menu item 09 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image">
+                        <a href="#">
+                            <img src="./img/place-holder-logo.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <h2>Item Name</h2>
+                        <p>Brief description</p>
+                    </div>
+                </div>
+                <!-- end of menu item 09 -->
+                
+                <!-- menu item 10 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text">
+                        <h2>Item Name</h2>
+                        <p>Brief description</p>
+                    </div>
+                    <div class="menu-image">
+                        <a href="#">
+                            <img src="./img/place-holder-logo.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of menu item 10 -->
+                
+                <!-- menu item 11 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image">
+                        <a href="#">
+                            <img src="./img/place-holder-logo.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <h2>Item Name</h2>
+                        <p>Brief description</p>
+                    </div>
+                </div>
+                <!-- end of menu item 11 -->
+                
+                <!-- menu item 12 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text">
+                        <h2>Item Name</h2>
+                        <p>Brief description</p>
+                    </div>
+                    <div class="menu-image">
+                        <a href="#">
+                            <img src="./img/place-holder-logo.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of menu item 12 -->
+            </div>
             
-
-
-            <!-- menu item 10 -->
-            <div>
-                <h2>Item Name</h2>
-                <p>Brief description</p>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
-            </div>
-            <!-- end of menu item 10 -->
-            
-            <!-- menu item 11 -->
-            <div>
-                <h2>Item Name</h2>
-                <p>Brief description</p>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
-            </div>
-            <!-- end of menu item 11 -->
-            
-            <!-- menu item 12 -->
-            <div>
-                <h2>Item Name</h2>
-                <p>Brief description</p>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
-            </div>
-            <!-- end of menu item 12 -->
-
-
-
-            <!-- ROW BREAK 4/5 -->
-
-
-
-            <!-- menu item 13 -->
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
-            </div>
-            <div>
-                <h2>Item Name</h2>
-                <p>Brief description</p>
-            </div>
-            <!-- end of menu item 13 -->
-            
-            <!-- menu item 14 -->
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
-            </div>
-            <div>
-                <h2>Item Name</h2>
-                <p>Brief description</p>
-            </div>
-            <!-- end of menu item 14 -->
-            
-            <!-- menu item 15 -->
-            <div>
-                <a href="#">
-                    <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-                </a>
-            </div>
-            <div>
-                <h2>Item Name</h2>
-                <p>Brief description</p>
-            </div>
-            <!-- end of menu item 15 -->
         </div>
         <!-- end of the menu div -->
 
         <!-- Events -->
-        <div>
+        <div class="flex-row flex-rhc primary">
             <div>
-                <h2>Events and functions</h2>
-                <p>Our events and function room is currently undergoing renovations and is not available for bookings at this time.</p>
-                <!-- Button ??? -->
-            </div>
-            <div>
+                <!-- image -->
                 <a href="#">
                     <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
                 </a>
+            </div>
+            <div class="text-center">
+                <!-- text -->
+                <h2>Events and functions</h2>
+                <p>Our events and function room is currently undergoing renovations and is not available for bookings at this time.</p>
+                <!-- Button ??? -->
             </div>
         </div> 
         <!-- end of the events div -->
 
         <!-- Contact -->
-        <div>
-            <!-- image -->
-            <div>
-            <a href="#">
-                <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
-            </a>
-            </div>
+        <div class="flex-row flex-rhc primary">
             <!-- text -->
-            <div>
+            <div class="text-center text-pad-1vh text-pad-1vw">
                 <h2>Where for art thou?</h2>
                 <p>To find us you need to follow the second star to the right, and continue straight on until morning.</p>
                 <p>Or... click this button to see a map. It's not as interesting but it's probably more useful.</p>
@@ -286,9 +270,13 @@
                 <p>7am - 8pm</p>
                 <p>(everyday, except public holidays)</p>
                 <!-- button -->
-                <div class="">
-                    <a href="./contact.html">Find Us</a> 
-                </div>
+                <a href="./contact.html">Find Us</a>
+            </div>
+            <!-- image -->
+            <div>
+            <a href="#">
+                <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+            </a>
             </div>
         </div>
         <!-- end of the contacts div -->
@@ -297,23 +285,19 @@
     <!-- Page Footer -->
     <footer>
         <!-- Upper footer -->
-        <div>
+        <div class="flex-row flex-rhc border-tb">
             <h3>488 South Road, Moorabbin | email@placeholder.com | (03) 9876 6789
             </h3>
         </div>
         <!-- end of the upper footer div -->
 
-        <!-- Middle footer -->
-        <div>
-            <a href="#">
+        <!-- Lower footer -->
+        <div class="flex-row flex-rhc">
+            <div class="footer-edge"></div>
+            <a href="#" class="flex-row flex-rhc footer-mid">
                 <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
             </a>
-        </div>
-        <!-- end of the middle footer div -->
-        
-        <!-- lower footer -->
-        <div>
-            <div>
+            <div id="credits" class="flex-column flex-cab flex-car footer-edge">
                 <ul>
                     <li><a href="./credits.html">Credits</a></li>
                 </ul>
