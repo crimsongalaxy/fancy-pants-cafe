@@ -143,6 +143,7 @@
 
 
 .container {
+    min-width: 80vw;
     max-width: 80vw;
     margin: 0;
     padding: 0;
@@ -281,7 +282,7 @@ header {
 
 #contact-map {
     min-width: 40vw;
-    overflow: ;
+    /* overflow: ; */
     
 }
 
@@ -304,8 +305,19 @@ header {
 }
 
 .footer-mid {
-    min-width: 60vw;
+    min-width: 59vw;
 }
+
+footer ul li {
+    display: block;
+    padding-right: 2vw;
+    padding-bottom: 0vh;
+}
+
+
+
+
+
 
 /* #credits {
 
