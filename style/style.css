@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 
+/* Root variables */
+
+:root {
+    --brand-colour: #3c3d83;
+    --primary-colour: #f5f5f5;
+    --secondary-colour: #000000;
+    --border-standard: 0.1em;
+}
+
 /* Utilities */
 
 /* create a flex row */
@@ -81,17 +90,6 @@
 }
 
 
-/* Grid */
-
-/* .grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: dodgerblue;
-    padding: 10px;
-} */
-
-
-
 
 /* Text alignment */
 
@@ -123,20 +121,44 @@
 
 .border-tb {
     border-style: solid;
-    border-width: 25px 0px;
-    border-color: red;
+    border-width: var(--border-standard) 0;
+    border-color: var(--secondary-colour);
+}
+
+.border-t {
+    border-style: solid;
+    border-width: var(--border-standard) 0 0 0;
+    border-color: var(--secondary-colour);
+}
+
+.border-b {
+    border-style: solid;
+    border-width: 0 0 var(--border-standard) 0;
+    border-color: var(--secondary-colour);
 }
 
 .border-lr {
     border-style: solid;
-    border-width: 0px 25px;
-    border-color: red;
+    border-width: 0 var(--border-standard);
+    border-color: var(--secondary-colour);
+}
+
+.border-l {
+    border-style: solid;
+    border-width: 0 0 0 var(--border-standard);
+    border-color: var(--secondary-colour);
+}
+
+.border-r {
+    border-style: solid;
+    border-width: 0 var(--border-standard) 0 0;
+    border-color: var(--secondary-colour);
 }
 
 .border-all {
     border-style: solid;
-    border-width: 25px 25px;
-    border-color: red;
+    border-width: var(--border-standard);
+    border-color: var(--secondary-colour);
 }
 
 
@@ -147,35 +169,63 @@
     max-width: 80vw;
     margin: 0;
     padding: 0;
-    border-style: solid;
+    /* border-style: solid;
     border-width: 10px;
-    border-color: aqua;
+    border-color: aqua; */
 }
 
 
 
 /* General formatting */
 
-/* * {
+* {
+    margin: 0;
+    padding: 0;
+}
 
-} */
+img {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
 
 body {
     margin: 0; /* CSS reset */
     padding: 0;
     font-family: "Lexend", Verdana, Tahoma, "Century Gothic", Trebuchet, Calibri, "Open Sans", Arial, sans-serif; /* dyslexia friendly fonts as recommended by the British Dyslexia Association. */
     line-height: 32px; /* increased line spacing as recommended by the British Dyslexia Association. */
-    background-color: #f5f5f5;
+    background-color: var(--primary-colour);
 }
 
-nav {
-    /* width: 100vw; */
-    background-color: #5e0dc7;
+#view-setter {
+    max-height: 100vh;
 }
 
 /* Header */
 header {
     min-height: 100vh;
+}
+
+nav {
+    /* width: 100vw; */
+    background-color: var(--primary-colour);
+}
+
+
+/* Logo */
+
+#logo-small {
+    min-width: 100%;
+    max-width: 4em;
+    min-height: 100%;
+    max-height: 4em;
+    padding: 1vh;
+}
+
+#logo-large {
+    max-width: 25em;
+    max-height: 25em;
+    padding: 1vh;
 }
 
 /* Navbar */
@@ -184,11 +234,12 @@ header {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    min-height: 10vh;
     /* padding: 10px; */
 }
 
 #navbar a {
-    color: #ffd700;
+    color: var(--secondary-colour);
     text-decoration: none;
 }
 
@@ -201,30 +252,48 @@ header {
     display: block;
     padding: 20px;
     font-size: 24px;
-
-    &:hover {
-    background-color: #5A4080;
-    }
 }
 
+#navbar ul li:hover {
+    background-color: var(--brand-colour);
+    }
+
+#navbar ul li:hover a {
+    color: var(--primary-colour);
+    }
+
 /* Hero section */
+
+.hero-div {
+    min-width: 99vw;
+}
+
+.hero-img {
+    min-width: 100%;
+}
 
 
 /* Info section */
 
-/* #info {
-    width: 100vw;
-} */
+#info {
+    padding: 7vh;
+}
+
+#tilda {
+    margin: 1em;
+    font-size: 32px;
+}
 
 /* Main section */
 
 .primary div {
     min-width: 50vh;
-    min-height: 80vh;
-    border-style: solid;
+    min-height: 50vh;
+    /* border-style: solid;
     border-width: 25px 25px;
-    border-color: navy;
+    border-color: navy; */
     flex: 1;
+    overflow: hidden;
 }
 
 /* #test {
@@ -234,6 +303,7 @@ header {
 
 .primary img {
     min-height: 100%;
+    max-height: 70vh;
 }
 
 
@@ -300,6 +370,10 @@ header {
 
 /* footer section */
 
+#upper-footer {
+    min-height: 10vh;
+}
+
 .footer-edge {
     min-width: 20vw;
 }
@@ -311,20 +385,12 @@ header {
 footer ul li {
     display: block;
     padding-right: 2vw;
-    padding-bottom: 0vh;
+    padding-bottom: 2vh;
+    text-decoration: none;
 }
 
-
-
-
-
-
-/* #credits {
-
-} */
-
-footer ul li {
-    display: block;
-    padding-right: 2vw;
-    padding-bottom: 0vh;
+footer ul li a {
+    color: var(--brand-colour);
+    font-weight: bold;
+    text-decoration: none;
 }
