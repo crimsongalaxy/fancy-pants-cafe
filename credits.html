@@ -12,11 +12,13 @@
     <!-- Page Header -->
     <header class="flex-column">
         <!-- Navbar -->
-        <nav class="flex-row flex-rhc">
+        <nav class="flex-row flex-rhc border-b">
             <div id="navbar" class="flex-row flex-rvc container">
                 <!-- Logo -->
-                <div>
-                    <a href="./index.html"><span id="logo"><img src="./img/place-holder-logo.jpg" alt="Fancy Pants Cafe"></span></a>
+                <div class="flex-row flex-rhc flex-rvc">
+                    <a href="./index.html">
+                        <img id="logo-small" src="./img/Fancy-Pants-Logo.svg" alt="Fancy Pants Cafe">
+                    </a>
                 </div>
                 <!-- Nav buttons -->
                 <div>
@@ -32,15 +34,15 @@
         <!-- end of the navbar -->
 
         <!-- Hero -->
-        <div class="flex-column flex-chc flex-cvc flex-fill">
-            <a href="#">
-                <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+        <div id="hero-div" class="flex-column flex-chc flex-cvc flex-fill border-b">
+            <a>
+                <img id="hero-img" src="./img/coffee-time-01.jpg" alt="Fancy Pants Cafe logo" aria-label="Logo by Robert Warrandyte.">
             </a>
         </div>
         <!-- end of the hero div -->
 
         <!-- Info -->
-        <div class="flex-column flex-chc border-tb">
+        <div class="flex-column flex-chc border-b">
             <div class="container text-center">
                 <h1>Sharing the love!</h1>
                 <p>Insert text here.</p>
@@ -50,28 +52,32 @@
     </header>
 
     <!-- Main Body of what is on the page. -->
-    <main class="flex-column flex-chc">
-        <div class="container text-center">
-            <h2>Credit where credit is due!</h2>
-            <p>This cafe couldn't possibly be as fancy as it is without the art that decorates the empty space. Below are all the images used to make our pants fancy. Please click on an image to be taken to the page from which the images were sourced and information about the artists can be found.</p>
-            <p>Thank you to the artists who have been kind enough to make their work available for use by myself and many others.</p>
+    <main class="flex-column flex-chc border-b">
+        <div class="flex-column flex-chc border-b-100">
+            <div class="container text-center">
+                <h2>Credit where credit is due!</h2>
+                <p>This cafe couldn't possibly be as fancy as it is without the art that decorates the empty space. Below are all the images used to make our pants fancy. Please click on an image to be taken to the page from which the images were sourced and information about the artists can be found.</p>
+                <p>Thank you to the artists who have been kind enough to make their work available for use by myself and many others.</p>
+            </div>
+            <div class="text-center">
+                <p>This is where the images will go.</p>
+            </div>
         </div>
-        <div class="text-center">
-            <p>This is where the images will go.</p>
-        </div>
-        <div class="container text-center">
-            <h2>Shout-out to my classmates!</h2>
-            <p>This site isn't the only site being developed by students at Holmesglen. Below is a list of all the sites created by my classmates. Please check them out; it helps with the analytics we need to complete our assessment.</p>
-        </div>
-        <div class="text-center">
-            <p>This is where the links will go.</p>
+        <div>
+            <div class="container text-center">
+                <h2>Shout-out to my classmates!</h2>
+                <p>This site isn't the only site being developed by students at Holmesglen. Below is a list of all the sites created by my classmates. Please check them out; it helps with the analytics we need to complete our assessment.</p>
+            </div>
+            <div class="text-center">
+                <p>This is where the links will go.</p>
+            </div>
         </div>
     </main>
 
     <!-- Page Footer -->
     <footer>
         <!-- Upper footer -->
-        <div class="flex-row flex-rhc border-tb">
+        <div id="upper-footer" class="flex-row flex-rhc flex-rvc border-b">
             <h3>488 South Road, Moorabbin | email@placeholder.com | (03) 555-6789
             </h3>
         </div>
@@ -79,10 +85,9 @@
 
         <!-- Lower footer -->
         <div class="flex-row flex-rhc">
-            <div class="footer-edge">
-            </div>
-            <a href="#" class="flex-row flex-rhc footer-mid">
-                <img src="./img/place-holder.jpg" alt="place-holder image of a garden gnome." aria-label="Source: Pixabay.com">
+            <div class="footer-edge"></div>
+            <a class="flex-row flex-rhc footer-mid">
+                <img id="logo-large" src="./img/Fancy-Pants-Logo.svg" alt="Fancy Pants Cafe logo" aria-label="Logo by Robert Warrandyte.">
             </a>
             <div id="credits" class="flex-column flex-cab flex-car footer-edge">
                 <ul>
