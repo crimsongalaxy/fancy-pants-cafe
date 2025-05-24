@@ -40,7 +40,7 @@ h1 {
 h2 {
     display: block;
     font-size: 2.4rem;
-    margin-block-start: 0.83rem;
+    margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     font-weight: bold;
 }
@@ -257,8 +257,7 @@ li {
 
 
 .container {
-    min-width: 80vw;
-    max-width: 80vw;
+    width: 80%;
     margin: 0;
     padding: 0;
     /* border-style: solid;
@@ -298,17 +297,17 @@ nav {
 /* Logo */
 
 #logo-small {
-    min-width: 100%;
-    max-width: 6.4rem;
-    min-height: 100%;
-    max-height: 6.4rem;
-    padding: 1vh;
+    /* min-width: 100%; */
+    max-width: 9rem;
+    /* min-height: 100%; */
+    max-height: 9rem;
+    padding: 1rem;
 }
 
 #logo-large {
     max-width: 40rem;
     max-height: 40rem;
-    padding: 1vh;
+    padding: 1.5rem;
 }
 
 /* Navbar */
@@ -317,7 +316,8 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    min-height: 10vh;
+    /* min-height: 10vh; */
+    height: 10rem;
     /* padding: 10px; */
 }
 
@@ -348,7 +348,7 @@ nav {
 /* Hero section */
 
 .hero-div {
-    min-width: 99vw;
+    min-width: 100%;
 }
 
 .hero-img {
@@ -359,7 +359,7 @@ nav {
 /* Info section */
 
 #info {
-    padding: 7vh;
+    padding: 7rem;
 }
 
 #tilda {
@@ -374,7 +374,7 @@ nav {
 } */
 
 .primary div {
-    width: calc(100vw / 2);
+    width: calc(100% / 2);
     /* min-height: 50vh; */
     /* border-style: solid;
     border-width: 25px 25px;
@@ -459,21 +459,21 @@ nav {
 /* footer section */
 
 #upper-footer {
-    min-height: 10vh;
+    height: 10rem;
 }
 
 .footer-edge {
-    min-width: 20vw;
+    min-width: calc(100% * 0.2);
 }
 
 .footer-mid {
-    min-width: 59vw;
+    min-width: calc(100% * 0.6);
 }
 
 footer ul li {
     display: block;
-    padding-right: 2vw;
-    padding-bottom: 2vh;
+    padding-right: 6rem;
+    padding-bottom: 3rem;
     text-decoration: none;
 }
 
