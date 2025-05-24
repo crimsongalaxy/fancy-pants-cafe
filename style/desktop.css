@@ -5,7 +5,7 @@
 /* Root variables */
 
 :root {
-    --std-font-size: 1.8rem;
+    --std-font-size: 1.8rem; /* Increased standard font size to 16-19 as recommended by the British Dyslexia Association. */
     --brand-colour: #3c3d83;
     --primary-colour: #f5f5f5;
     --secondary-colour: #000000;
@@ -14,19 +14,68 @@
 
 
 
-/* Resets */
+/* CSS Resets */
 
-* {
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* dyslexia friendly fonts as recommended by the British Dyslexia Association. */
-    font-family: "Lexend", Verdana, Tahoma, "Century Gothic", Trebuchet, Calibri, "Open Sans", Arial, sans-serif;
-    /* change font size to make it easier to work with em and rem units */
-    font-size: 10px; 
-    /* increased line spacing as recommended by the British Dyslexia Association. */
-    line-height: 1.5em;
-    /* increased letter spacing as recommended by the British Dyslexia Association. */
-    letter-spacing: 0.12em;
+    border: 0;
+}
+
+html {
+    font-size: 10px; /* change font size to make it easier to work with em and rem units */
+    scroll-behavior: smooth;
+}
+
+html, body {
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+
+body {
+    overflow-y: scroll; /* reserves space for the vertical scrollbar, preventing layout shifts when content grows.*/
+    font-family: "Lexend", Arial, Verdana, Tahoma, "Comic Sans MS", sans-serif; /* dyslexia friendly fonts as recommended by the British Dyslexia Association. */
+    line-height: 1.5; /* increased line spacing as recommended by the British Dyslexia Association. */
+    letter-spacing: 0.12em; /* increased letter spacing as recommended by the British Dyslexia Association. */
+    word-spacing: 0.42em; /* increased word spacing as recommended by the British Dyslexia Association. */
+    background-color: var(--primary-colour);
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-width: 0 0 var(--border-standard) 0;
+    border-color: var(--secondary-colour);
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+a {
+    font-size: var(--std-font-size);
 }
 
 h1 {
@@ -77,20 +126,23 @@ h6 {
     font-weight: bold;
 }
 
-p {
+img {
     display: block;
-    font-size: var(--std-font-size);
-    line-height: 1.5em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-}
-
-a {
-    font-size: var(--std-font-size);
+    padding: 0;
+    margin: 0;
 }
 
 li {
     font-size: var(--std-font-size);
+}
+
+p {
+    display: block;
+    font-size: var(--std-font-size);
+    line-height: 1.5; /* increased line spacing as recommended by the British Dyslexia Association. */
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    max-width: 80ch; /* short characters per line limit as recommended by the British Dyslexia Association. */
 }
 
 
@@ -258,7 +310,8 @@ li {
 
 .container {
     width: 80%;
-    margin: 0;
+    overflow: auto;
+    margin: auto;
     padding: 0;
     /* border-style: solid;
     border-width: 10px;
@@ -269,30 +322,9 @@ li {
 
 /* General formatting */
 
-img {
-    display: block;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    background-color: var(--primary-colour);
-}
-
 #view-setter {
     max-height: 100vh;
 }
-
-/* Header */
-header {
-    min-height: 100vh;
-}
-
-nav {
-    /* width: 100vw; */
-    background-color: var(--primary-colour);
-}
-
 
 /* Logo */
 
@@ -312,38 +344,48 @@ nav {
 
 /* Navbar */
 #navbar {
+    max-width: 100%;
+    height: 10rem;
+    overflow: auto;
+    /* background-color: #ff0000; */
+}
+
+#navbar .nav-flex {
+    background-color: var(--primary-colour);
+    color: var(--secondary-colour);
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    /* min-height: 10vh; */
-    height: 10rem;
-    /* padding: 10px; */
+    align-items: center;
 }
 
 #navbar a {
+    height: 100%;
     color: var(--secondary-colour);
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 #navbar ul {
     display: flex;
     flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-#navbar ul li {
+#navbar ul li a {
     display: block;
     padding: 2rem;
     font-size: 2.4rem;
-}
 
-#navbar ul li:hover {
+    &:hover {
     background-color: var(--brand-colour);
-    }
-
-#navbar ul li:hover a {
     color: var(--primary-colour);
     }
+}
 
 /* Hero section */
 
@@ -358,9 +400,9 @@ nav {
 
 /* Info section */
 
-#info {
+/* #info {
     padding: 7rem;
-}
+} */
 
 #tilda {
     margin: 1.6rem;
@@ -397,7 +439,7 @@ nav {
 /* Menu section */
 
 .menu-item {
-    max-width: calc(100vw / 3);
+    max-width: 100%;
     border-style: solid;
     border-width: 0 0 var(--border-standard) 0;
     border-color: var(--secondary-colour)  
@@ -439,17 +481,19 @@ nav {
 
 
 #contact-map {
-    min-width: 40vw;
+    min-width: 40%;
+    min-height: 100%;
     /* overflow: ; */
-    
 }
 
 #contact-info {
-    min-width: 20vw;
+    min-width: 30%;
+    background-color: crimson;
 }
 
 #contact-hours {
-    min-width: 20vw;
+    min-width: 30%;
+    background-color: chocolate;
 }
 
 
