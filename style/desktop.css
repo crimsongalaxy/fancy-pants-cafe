@@ -76,6 +76,8 @@ footer {
 
 a {
     font-size: var(--std-font-size);
+    line-height: 1.5; /* increased line spacing as recommended by the British Dyslexia Association. */
+    max-width: 80ch; /* short characters per line limit as recommended by the British Dyslexia Association. */
 }
 
 h1 {
@@ -134,6 +136,8 @@ img {
 
 li {
     font-size: var(--std-font-size);
+    line-height: 1.5; /* increased line spacing as recommended by the British Dyslexia Association. */
+    max-width: 80ch; /* short characters per line limit as recommended by the British Dyslexia Association. */
 }
 
 p {
@@ -242,9 +246,19 @@ p {
     text-align: right;
 }
 
+.text-pad-v1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.text-pad-h1 {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 .text-pad-1vh {
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
 }
 
 .text-pad-1vw {
@@ -313,6 +327,7 @@ p {
     overflow: auto;
     margin: auto;
     padding: 0;
+    background-color: aqua;
     /* border-style: solid;
     border-width: 10px;
     border-color: aqua; */
@@ -329,11 +344,8 @@ p {
 /* Logo */
 
 #logo-small {
-    /* min-width: 100%; */
-    max-width: 9rem;
-    /* min-height: 100%; */
-    max-height: 9rem;
-    padding: 1rem;
+    width: 9rem;
+    height: 9rem;
 }
 
 #logo-large {
@@ -357,7 +369,6 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
 #navbar a {
@@ -371,6 +382,7 @@ p {
 #navbar ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -387,14 +399,26 @@ p {
     }
 }
 
-/* Hero section */
-
-.hero-div {
-    min-width: 100%;
+#nav-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-.hero-img {
-    min-width: 100%;
+/* Hero section */
+
+#hero-div {
+    height: calc(100vh - 20rem);
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero-img {
+    height: 100%;
+    width: auto;
 }
 
 
@@ -412,17 +436,24 @@ p {
 /* Main section */
 
 /* .primary {
-    width: 100vw;
+    overflow: hidden;
 } */
 
 .primary div {
+    aspect-ratio: 2/1;
     width: calc(100% / 2);
-    /* min-height: 50vh; */
+    overflow: hidden;
+    /* height: 65vh; */
+    /* min-height: 35vh; */
     /* border-style: solid;
     border-width: 25px 25px;
     border-color: navy; */
     /* flex: 1; */
-    /* overflow: hidden; */
+}
+
+.primary img {
+    height: 100%;
+    /* max-width: 100%; */
 }
 
 /* #test {
@@ -481,19 +512,18 @@ p {
 
 
 #contact-map {
-    min-width: 40%;
-    min-height: 100%;
+    /* min-width: 40%; */
+    height: auto;
+    /* min-height: 65vh; */
+    /* max-height: 90vh; */
     /* overflow: ; */
 }
 
 #contact-info {
-    min-width: 30%;
-    background-color: crimson;
-}
-
-#contact-hours {
-    min-width: 30%;
-    background-color: chocolate;
+    height: auto;
+    width: 40%;
+    /* background-color: crimson; */
+    padding: 2em;
 }
 
 
@@ -519,6 +549,7 @@ footer ul li {
     padding-right: 6rem;
     padding-bottom: 3rem;
     text-decoration: none;
+    text-align: right;
 }
 
 footer ul li a {

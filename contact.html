@@ -7,7 +7,7 @@
     <link rel="stylesheet" media="only screen and (min-width: 901px)" href="./style/desktop.css" />
     <!-- <link rel="stylesheet" media="only screen and (max-width: 900px)" href="./style/mobile.css" /> -->
     <!-- This is the title that will appear on the browser tab. -->
-    <title>Contact</title>
+    <title>Find Us</title>
 </head>
 <body class="flex-column">
     <!-- Page Header -->
@@ -15,7 +15,7 @@
         <!-- navbar -->
         <nav id="navbar">
             <div class="container nav-flex">
-                <a href="./index.html">
+                <a id="nav-logo" href="./index.html">
                     <img id="logo-small" src="./img/Fancy-Pants-Logo.svg" alt="Fancy Pants Cafe">
                 </a>
                 <ul>
@@ -28,29 +28,27 @@
         <!-- end of the navbar -->
 
         <!-- Hero -->
-        <div id="hero-div" class="flex-column flex-chc flex-cvc flex-fill border-b">
-            <a>
+        <div id="hero-div" class="flex-column flex-chc flex-cvc border-b">
+            <a class="flex-row flex-rhc">
                 <img id="hero-img" src="./img/cafe-interior-01.jpg" alt="Fancy Pants Cafe logo" aria-label="Logo by Robert Warrandyte.">
             </a>
         </div>
         <!-- end of the hero div -->
 
         <!-- Info -->
-        <div id="info" class="flex-row flex-rhc border-b">
-            <div class="container text-center">
-                <h1>Welcome to Fancy Pants Cafe!</h1>
-                <p id="tilda">~</p>
-                <p>We are an imaginary cafe in the heart of room 1.116 at Holmesglen Institute's Moorabbin campus. Born from the need to complete an assessment task we were thought into existence by Robert Warrandyte in an attempt to satisfy their academic overlord's completely reasonable expectations.</p>
-                <p>Since then we have grown into a comfy and cozy hideaway for all manner of folk from gnomes and elves to druids and warlocks, and everyone in-between, who find themselves seeking a respite from the daily grind.</p>
-            </div>
+        <div id="info" class="flex-column flex-chc container text-center">
+            <h1>Welcome to Fancy Pants Cafe!</h1>
+            <p id="tilda">~</p>
+            <p>We are an imaginary cafe in the heart of room 1.116 at Holmesglen Institute's Moorabbin campus. Born from the need to complete an assessment task we were thought into existence by Robert Warrandyte in an attempt to satisfy their academic overlord's completely reasonable expectations.</p>
+            <p>Since then we have grown into a comfy and cozy hideaway for all manner of folk from gnomes and elves to druids and warlocks, and everyone in-between, who find themselves seeking a respite from the daily grind.</p>
         </div>
         <!-- end of the info div -->
     </header>
     
     <!-- Main Body of what is on the page. -->
-    <main>
+    <main class="border-tb">
         <!-- Contact -->
-        <div class="flex-row">
+        <div class="flex-row primary">
             <!-- map -->
             <div id="contact-map">
                 <iframe
@@ -63,39 +61,34 @@
                 </iframe>
             </div>
             <!-- text -->
-            <div id="contact-info">
+            <div id="contact-info" class="flex-column flex-chc flex-cvc  text-pad-h1 text-pad-v1text-center">
                 <h2>Land ho!</h2>
                 <p>You can find Fancy Pants Cafe at:</p>
                 <p>488 South Road, Moorabbin</p>
-                <p>Or you can email us at:</p>
-                <p>email@placeholder.com</p>
-                <p>And for the bravest among you, here's our phone number. But, be warned: a real person may answer the phone and you will have to speak to them...</p>
+                <p>Or you can email us at: email@placeholder.com</p>
+                <p>And for the bravest among you, here's our phone number. But, be warned: a real person may answer the phone and you will have to speak with them...</p>
                 <p>(03) 555-6789</p>
-            </div>
-            <div id="contact-hours">
                 <h2>Open hours:</h2>
                 <p>7am - 8pm</p>
                 <p>(everyday, except public holidays)</p>
             </div>
         </div>
-        <div class="flex-column flex-chc border-b">
-            <div class="container text-center">
-                <p>Limited on-site parking is available but it can fill-up fast! All parking is metred parking which can be paid for either by app or at the machine. Detailed instructions are available on-site. See signage for further information.</p>
-                <p>Beware of pirates, and the minotaur who wanders the catacombs. If the minotaur should corner you, play them a soothing tune to lull them into a tranquil sleep. </p>
-                <p>Good luck, traveler!</p>
-            </div>
+        <div class="flex-column flex-chc container text-center text-pad-h1 text-pad-v1">
+            <p>Limited on-site parking is available but it can fill-up fast! All parking is metred parking which can be paid for either by app or at the machine. Detailed instructions are available on-site. See signage for further information.</p>
+            <p>Beware of pirates, and the minotaur who wanders the catacombs. If the minotaur should corner you, play them a soothing tune to lull them into a tranquil sleep. </p>
+            <p>Good luck, traveler!</p>
         </div>
         <!-- end of the contacts div -->
         
         <!-- Menu -->
-        <div class="flex-row flex-rhc primary border-b">
+        <div class="flex-row flex-rhc primary border-tb">
             <div class="border-r">
                 <!-- image -->
                 <a>
-                    <img src="./img/place-holder.svg" alt="place-holder image."  aria-label="Source: Pixabay.com">
+                    <img src="./img/menu01.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
                 </a>
             </div>
-            <div class="text-center">
+            <div class="text-center text-pad-h1 text-pad-v1">
                 <!-- text -->
                 <h2>Winter is coming... and so is our new menu!</h2>
                 <p>See what's new in our seasonally updated menu with our wicked winter treats.</p>
@@ -106,8 +99,8 @@
         <!-- end of the menu div -->
 
         <!-- Events -->
-        <div class="flex-row flex-rhc primary border-b">
-            <div class="text-center border-r">
+        <div class="flex-row flex-rhc primary">
+            <div class="text-center text-pad-h1 text-pad-v1 border-r">
                 <!-- text -->
                 <h2>Events and functions</h2>
                 <p>Our events and function room is currently undergoing renovations and is not available for bookings at this time.</p>
@@ -116,7 +109,7 @@
             <div>
                 <!-- image -->
                 <a>
-                    <img src="./img/place-holder.svg" alt="place-holder image."  aria-label="Source: Pixabay.com">
+                    <img src="./img/events-03.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
                 </a>
             </div>
         </div> 
@@ -142,6 +135,7 @@
             <div id="credits" class="flex-column flex-cab flex-car footer-edge">
                 <ul>
                     <li><a href="./credits.html">Credits</a></li>
+                    <li>&copy; Robert Warrandyte</a></li>
                 </ul>
             </div>
         </div>

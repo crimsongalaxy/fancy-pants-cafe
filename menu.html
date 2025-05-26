@@ -12,50 +12,41 @@
 <body class="flex-column">
     <!-- Page Header -->
     <header class="flex-column">
-        <!-- Navbar -->
-        <nav class="flex-row flex-rhc border-b">
-            <div id="navbar" class="flex-row flex-rvc container">
-                <!-- Logo -->
-                <div class="flex-row flex-rhc flex-rvc">
-                    <a href="./index.html">
-                        <img id="logo-small" src="./img/Fancy-Pants-Logo.svg" alt="Fancy Pants Cafe">
-                    </a>
-                </div>
-                <!-- Nav buttons -->
-                <div>
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./menu.html">Menu</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- end of the nav buttons -->
+        <!-- navbar -->
+        <nav id="navbar">
+            <div class="container nav-flex">
+                <a id="nav-logo" href="./index.html">
+                    <img id="logo-small" src="./img/Fancy-Pants-Logo.svg" alt="Fancy Pants Cafe">
+                </a>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
             </div>
         </nav>
         <!-- end of the navbar -->
 
         <!-- Hero -->
-        <div id="hero-div" class="flex-column flex-chc flex-cvc flex-fill border-b">
-            <a>
+        <div id="hero-div" class="flex-column flex-chc flex-cvc border-b">
+            <a class="flex-row flex-rhc">
                 <img id="hero-img" src="./img/coffee-time-01.jpg" alt="Fancy Pants Cafe logo" aria-label="Logo by Robert Warrandyte.">
             </a>
         </div>
         <!-- end of the hero div -->
 
         <!-- Info -->
-        <div id="info" class="flex-row flex-rhc border-b">
-            <div class="container text-center">
-                <h1>Welcome to Fancy Pants Cafe!</h1>
-                <p id="tilda">~</p>
-                <p>We are an imaginary cafe in the heart of room 1.116 at Holmesglen Institute's Moorabbin campus. Born from the need to complete an assessment task we were thought into existence by Robert Warrandyte in an attempt to satisfy their academic overlord's completely reasonable expectations.</p>
-                <p>Since then we have grown into a comfy and cozy hideaway for all manner of folk from gnomes and elves to druids and warlocks, and everyone in-between, who find themselves seeking a respite from the daily grind.</p>
-            </div>
+        <div id="info" class="flex-column flex-chc container text-center">
+            <h1>Welcome to Fancy Pants Cafe!</h1>
+            <p id="tilda">~</p>
+            <p>We are an imaginary cafe in the heart of room 1.116 at Holmesglen Institute's Moorabbin campus. Born from the need to complete an assessment task we were thought into existence by Robert Warrandyte in an attempt to satisfy their academic overlord's completely reasonable expectations.</p>
+            <p>Since then we have grown into a comfy and cozy hideaway for all manner of folk from gnomes and elves to druids and warlocks, and everyone in-between, who find themselves seeking a respite from the daily grind.</p>
         </div>
         <!-- end of the info div -->
     </header>
 
     <!-- Main Body of what is on the page. -->
-    <main>
+    <main class="border-tb">
         <!-- Menu -->
         <div class="flex-row">
             <div class="flex-column flex-fill border-r">
@@ -63,12 +54,12 @@
                 <div class="flex-row menu-item">
                     <div class="menu-image border-r">
                         <a>
-                            <img src="./img/place-holder.svg" alt="place-holder image."  aria-label="Source: Pixabay.com">
+                            <img src="./img/cafe-latte.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
                         </a>
                     </div>
                     <div class="menu-text">
                         <div>
-                            <h2>Item Name</h2>
+                            <h2>Cafe Latte</h2>
                             <p>Brief description</p>
                         </div>
                     </div>
@@ -79,13 +70,13 @@
                 <div class="flex-row menu-item">
                     <div class="menu-text border-r">
                         <div>
-                            <h2>Item Name</h2>
+                            <h2>Cappuccino</h2>
                             <p>Brief description</p>
                         </div>
                     </div>
                     <div class="menu-image">
                         <a>
-                            <img src="./img/place-holder.svg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                            <img src="./img/cappuccino.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
                         </a>
                     </div>
                 </div>
@@ -93,14 +84,14 @@
                 
                 <!-- menu item 03 -->
                 <div class="flex-row menu-item">
-                    <div class="menu-image border-r"
+                    <div class="menu-image border-r">
                         <a>
-                            <img src="./img/place-holder.svg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                            <img src="./img/long-black.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
                         </a>
                     </div>
                     <div class="menu-text">
                         <div>
-                            <h2>Item Name</h2>
+                            <h2>Long Black</h2>
                             <p>Brief description</p>
                         </div>
                     </div>
@@ -111,13 +102,13 @@
                 <div class="flex-row menu-item">
                     <div class="menu-text border-r">
                         <div>
-                            <h2>Item Name</h2>
+                            <h2>Hot Chocolate</h2>
                             <p>Brief description</p>
                         </div>
                     </div>
                     <div class="menu-image">
                         <a>
-                            <img src="./img/place-holder.svg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                            <img src="./img/hot-chocolate-02.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
                         </a>
                     </div>
                 </div>
@@ -134,12 +125,12 @@
                 <div class="flex-row menu-item">
                     <div class="menu-image border-r">
                         <a>
-                            <img src="./img/place-holder.svg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                            <img src="./img/chicken-parma.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
                         </a>
                     </div>
                     <div class="menu-text">
                         <div>
-                            <h2>Item Name</h2>
+                            <h2>Chicken Parma</h2>
                             <p>Brief description</p>
                         </div>
                     </div>
@@ -150,13 +141,13 @@
                 <div class="flex-row menu-item">
                     <div class="menu-text border-r">
                         <div>
-                            <h2>Item Name</h2>
+                            <h2>Sweet BBQ Pork</h2>
                             <p>Brief description</p>
                         </div>
                     </div>
                     <div class="menu-image">
                         <a>
-                            <img src="./img/place-holder.svg" alt="place-holder image."  aria-label="Source: Pixabay.com">
+                            <img src="./img/pork-sweet-sticky.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
                         </a>
                     </div>
                 </div>
@@ -166,12 +157,12 @@
                 <div class="flex-row menu-item">
                     <div class="menu-image border-r">
                         <a>
-                            <img src="./img/place-holder.svg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                            <img src="./img/hamburger.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
                         </a>
                     </div>
                     <div class="menu-text">
                         <div>
-                            <h2>Item Name</h2>
+                            <h2>Burger</h2>
                             <p>Brief description</p>
                         </div>
                     </div>
@@ -182,13 +173,13 @@
                 <div class="flex-row menu-item">
                     <div class="menu-text border-r">
                         <div>
-                            <h2>Item Name</h2>
+                            <h2>Pizza</h2>
                             <p>Brief description</p>
                         </div>
                     </div>
                     <div class="menu-image">
                         <a>
-                            <img src="./img/place-holder.svg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                            <img src="./img/pizza.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
                         </a>
                     </div>
                 </div>
@@ -205,12 +196,12 @@
                 <div class="flex-row menu-item">
                     <div class="menu-image border-r">
                         <a>
-                            <img src="./img/place-holder.svg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                            <img src="./img/choc-muffin.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
                         </a>
                     </div>
                     <div class="menu-text">
                         <div>
-                            <h2>Item Name</h2>
+                            <h2>Chocolate Mufffin</h2>
                             <p>Brief description</p>
                         </div>
                     </div>
@@ -221,13 +212,13 @@
                 <div class="flex-row menu-item">
                     <div class="menu-text border-r">
                         <div>
-                            <h2>Item Name</h2>
+                            <h2>Red Velvet Cake</h2>
                             <p>Brief description</p>
                         </div>
                     </div>
                     <div class="menu-image">
                         <a>
-                            <img src="./img/place-holder.svg" alt="place-holder image."  aria-label="Source: Pixabay.com">
+                            <img src="./img/red-velvet-cake.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
                         </a>
                     </div>
                 </div>
@@ -237,12 +228,12 @@
                 <div class="flex-row menu-item">
                     <div class="menu-image border-r">
                         <a>
-                            <img src="./img/place-holder.svg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                            <img src="./img/giner-bread-man.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
                         </a>
                     </div>
                     <div class="menu-text">
                         <div>
-                            <h2>Item Name</h2>
+                            <h2>Ginger Bread Man</h2>
                             <p>Brief description</p>
                         </div>
                     </div>
@@ -253,13 +244,13 @@
                 <div class="flex-row menu-item">
                     <div class="menu-text border-r">
                         <div>
-                            <h2>Item Name</h2>
+                            <h2>Apple Crumble</h2>
                             <p>Brief description</p>
                         </div>
                     </div>
                     <div class="menu-image">
                         <a>
-                            <img src="./img/place-holder.svg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                            <img src="./img/apple-crumble.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
                         </a>
                     </div>
                 </div>
@@ -274,10 +265,10 @@
             <div class="border-r">
                 <!-- image -->
                 <a>
-                    <img src="./img/place-holder.svg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                    <img src="./img/events-02.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
                 </a>
             </div>
-            <div class="text-center">
+            <div class="text-center text-pad-h1 text-pad-v1">
                 <!-- text -->
                 <h2>Events and functions</h2>
                 <p>Our events and function room is currently undergoing renovations and is not available for bookings at this time.</p>
@@ -287,12 +278,12 @@
         <!-- end of the events div -->
 
         <!-- Contact -->
-        <div class="flex-row flex-rhc border-b primary">
-            <!-- text -->
-            <div class="text-center text-pad-1vh text-pad-1vw">
+        <div class="flex-row flex-rhc primary">
+            <div class="flex-column flex-chc text-center text-pad-h1 text-pad-v1 border-r">
+                <!-- text -->
                 <h2>Where for art thou?</h2>
                 <p>To find us you need to follow the second star to the right, and continue straight on until morning.</p>
-                <p>Or... click this button to see a map. It's not as interesting but it's probably more useful.</p>
+                <p>Or... click this button to see a map.</p>
                 <!-- button -->
                 <a href="./contact.html">Find Us</a>
                 <p>Beware of ninjas. Good luck, traveler!</p>
@@ -300,11 +291,11 @@
                 <p>7am - 8pm</p>
                 <p>(everyday, except public holidays)</p>
             </div>
-            <!-- image -->
-            <div class="border-l">
-            <a>
-                <img src="./img/place-holder.svg" alt="place-holder image."  aria-label="Source: Pixabay.com">
-            </a>
+            <div>
+                <!-- image -->
+                <a>
+                    <img src="./img/contact03.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
+                </a>
             </div>
         </div>
         <!-- end of the contacts div -->
@@ -328,6 +319,7 @@
             <div id="credits" class="flex-column flex-cab flex-car footer-edge">
                 <ul>
                     <li><a href="./credits.html">Credits</a></li>
+                    <li>&copy; Robert Warrandyte</a></li>
                 </ul>
             </div>
         </div>
