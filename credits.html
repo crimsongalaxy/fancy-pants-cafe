@@ -12,59 +12,432 @@
 <body class="flex-column">
     <!-- Page Header -->
     <header class="flex-column">
-        <!-- Navbar -->
-        <nav class="flex-row flex-rhc border-b">
-            <div id="navbar" class="flex-row flex-rvc container">
-                <!-- Logo -->
-                <div class="flex-row flex-rhc flex-rvc">
-                    <a href="./index.html">
-                        <img id="logo-small" src="./img/Fancy-Pants-Logo.svg" alt="Fancy Pants Cafe">
-                    </a>
-                </div>
-                <!-- Nav buttons -->
-                <div>
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./menu.html">Menu</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- end of the nav buttons -->
+        <!-- navbar -->
+        <nav id="navbar">
+            <div class="container nav-flex">
+                <a id="nav-logo" href="./index.html">
+                    <img id="logo-small" src="./img/Fancy-Pants-Logo.svg" alt="Fancy Pants Cafe">
+                </a>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
             </div>
         </nav>
         <!-- end of the navbar -->
 
         <!-- Hero -->
-        <div id="hero-div" class="flex-column flex-chc flex-cvc flex-fill border-b">
-            <a>
-                <img id="hero-img" src="./img/coffee-time-01.jpg" alt="Fancy Pants Cafe logo" aria-label="Logo by Robert Warrandyte.">
+        <div id="hero-div" class="flex-column flex-chc flex-cvc border-b">
+            <a class="flex-row flex-rhc">
+                <img id="hero-img" src="./img/contact01.jpg" alt="Fancy Pants Cafe logo" aria-label="Logo by Robert Warrandyte.">
             </a>
         </div>
         <!-- end of the hero div -->
 
         <!-- Info -->
-        <div class="flex-column flex-chc border-b">
-            <div class="container text-center">
-                <h1>Sharing the love!</h1>
-                <p>Insert text here.</p>
-            </div>
+        <div class="flex-column flex-chc container text-center">
+            <h1>Sharing the love!</h1>
+            <p>Insert text here.</p>
             <!-- end of the info div -->
         </div>
     </header>
 
     <!-- Main Body of what is on the page. -->
-    <main class="flex-column flex-chc border-b">
+    <main class="flex-column flex-chc border-tb">
         <div class="flex-column flex-chc border-b-100">
-            <div class="container text-center">
+            <div class="container flex-column flex-chc text-center">
                 <h2>Credit where credit is due!</h2>
                 <p>This cafe couldn't possibly be as fancy as it is without the art that decorates the empty space. Below are all the images used to make our pants fancy. Please click on an image to be taken to the page from which the images were sourced and information about the artists can be found.</p>
                 <p>Thank you to the artists who have been kind enough to make their work available for use by myself and many others.</p>
             </div>
-            <div class="text-center">
-                <p>This is where the images will go.</p>
+            <div class="flex-row container text-center">
+                <div>
+                    
+        <!-- Menu -->
+        <div class="flex-row">
+            <div class="flex-column flex-fill border-r">
+                <!-- credit image 01 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image border-r">
+                        <a>
+                            <img src="./img/cafe-interior-02-thumb.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <div>
+                            <p>1</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of credit image 01 -->
+                
+                <!-- credit image 02 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text border-r">
+                        <div>
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div class="menu-image">
+                        <a>
+                            <img src="./img/menu03-thumb.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of credit image 02 -->
+                
+                <!-- credit image 03 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image border-r">
+                        <a>
+                            <img src="./img/events-01-thumb.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <div>
+                            <p>3</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of credit image 03 -->
+                
+                <!-- credit image 04 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text border-r">
+                        <div>
+                            <p>4</p>
+                        </div>
+                    </div>
+                    <div class="menu-image">
+                        <a>
+                            <img src="./img/contact02-thumb.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of credit image 04 -->
+
+                <!-- credit image 05 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image border-r">
+                        <a>
+                            <img src="./img/coffee-time-01-thumb.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <div>
+                            <p>5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of credit image 05 -->
+                
+                <!-- credit image 06 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text border-r">
+                        <div>
+                            <p>6</p>
+                        </div>
+                    </div>
+                    <div class="menu-image">
+                        <a>
+                            <img src="./img/cafe-latte.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of credit image 06 -->
+                
+                <!-- credit image 07 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image border-r">
+                        <a>
+                            <img src="./img/cappuccino.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <div>
+                            <p>7</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of credit image 07 -->
+                
+                <!-- credit image 08 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text border-r">
+                        <div>
+                            <p>8</p>
+                        </div>
+                    </div>
+                    <div class="menu-image">
+                        <a>
+                            <img src="./img/long-black.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of credit image 08 -->
+            </div>
+
+
+
+            <!-- COLUMN BREAK 1/2 -->
+            
+
+            <div class="flex-column flex-fill border-r">
+                <!-- credit image 09 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image border-r">
+                        <a>
+                            <img src="./img/hot-chocolate-02.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <div>
+                            <p>9</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of credit image 09 -->
+                
+                <!-- credit image 10 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text border-r">
+                        <div>
+                            <p>10</p>
+                        </div>
+                    </div>
+                    <div class="menu-image">
+                        <a>
+                            <img src="./img/hot-chocolate-02.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of credit image 10 -->
+                
+                <!-- credit image 11 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image border-r">
+                        <a>
+                            <img src="./img/pork-sweet-sticky.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <div>
+                            <p>11</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of credit image 11 -->
+                
+                <!-- credit image 12 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text border-r">
+                        <div>
+                            <p>12</p>
+                        </div>
+                    </div>
+                    <div class="menu-image">
+                        <a>
+                            <img src="./img/hamburger.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of credit image 12 -->
+
+                <!-- credit image 13 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image border-r">
+                        <a>
+                            <img src="./img/pizza.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <div>
+                            <p>13</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of credit image 13 -->
+                
+                <!-- credit image 14 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text border-r">
+                        <div>
+                            <p>14</p>
+                        </div>
+                    </div>
+                    <div class="menu-image">
+                        <a>
+                            <img src="./img/choc-muffin.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of credit image 14 -->
+                
+                <!-- credit image 15 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image border-r">
+                        <a>
+                            <img src="./img/red-velvet-cake.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <div>
+                            <p>15</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of credit image 15 -->
+                
+                <!-- credit image 16 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text border-r">
+                        <div>
+                            <p>16</p>
+                        </div>
+                    </div>
+                    <div class="menu-image">
+                        <a>
+                            <img src="./img/giner-bread-man.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of credit image 16 -->
+            </div>
+
+
+
+            <!-- COLUMN BREAK 2/3 -->
+
+
+            <div class="flex-column flex-fill">
+                <!-- credit image 17 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image border-r">
+                        <a>
+                            <img src="./img/apple-crumble.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <div>
+                            <p>17</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of credit image 17 -->
+                
+                <!-- credit image 18 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text border-r">
+                        <div>
+                            <p>18</p>
+                        </div>
+                    </div>
+                    <div class="menu-image">
+                        <a>
+                            <img src="./img/events-02-thumb.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of credit image 18 -->
+                
+                <!-- credit image 19 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image border-r">
+                        <a>
+                            <img src="./img/contact03-thumb.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <div>
+                            <p>19</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of credit image 19 -->
+                
+                <!-- credit image 20 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text border-r">
+                        <div>
+                            <p>20</p>
+                        </div>
+                    </div>
+                    <div class="menu-image">
+                        <a>
+                            <img src="./img/cafe-interior-01-thumb.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of credit image 20 -->
+
+                <!-- credit image 21 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image border-r">
+                        <a>
+                            <img src="./img/menu01-thumb.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <div>
+                            <p>21</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of credit image 21 -->
+                
+                <!-- credit image 22 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text border-r">
+                        <div>
+                            <p>22</p>
+                        </div>
+                    </div>
+                    <div class="menu-image">
+                        <a>
+                            <img src="./img/events-03-thumb.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of credit image 22 -->
+                
+                <!-- credit image 23 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-image border-r">
+                        <a>
+                            <img src="./img/contact01-thumb.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                    <div class="menu-text">
+                        <div>
+                            <p>23</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of credit image 23 -->
+                
+                <!-- credit image 24 -->
+                <div class="flex-row menu-item">
+                    <div class="menu-text border-r">
+                        <div>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="menu-image">
+                        <a>
+                            <img src="./img/Fancy-Pants-Square.svg" alt="Fancy Pants Cafe logo." aria-label="Source: Pixabay.com">
+                        </a>
+                    </div>
+                </div>
+                <!-- end of credit image 24 -->
+            </div>
+            
+        </div>
+        <!-- end of the credit image div -->
+                </div>
             </div>
         </div>
-            <div class="container text-center">
+            <div class="container flex-column flex-chc text-center">
                 <h2>Shout-out to my classmates!</h2>
                 <p>This site isn't the only site being developed by students at Holmesglen. Below is a list of all the sites created by my classmates. Please check them out; it helps with the analytics we need to complete our assessment.</p>
             </div>
@@ -91,6 +464,7 @@
             <div id="credits" class="flex-column flex-cab flex-car footer-edge">
                 <ul>
                     <li><a href="./credits.html">Credits</a></li>
+                    <li>&copy; Robert Warrandyte</a></li>
                 </ul>
             </div>
         </div>
