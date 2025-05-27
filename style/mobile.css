@@ -10,7 +10,7 @@
     --primary-colour: #f5f5f5;
     --secondary-colour: #000000;
     --border-standard: 0.32rem;
-    --border-half: 0.19rem;
+    --border-half: 0.16rem;
 }
 
 
@@ -358,7 +358,7 @@ p {
 /* Navbar */
 #navbar {
     max-width: 100%;
-    height: 10rem;
+    /* height: 10rem; */
     overflow: auto;
     /* background-color: #ff0000; */
 }
@@ -368,7 +368,7 @@ p {
     color: var(--secondary-colour);
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -382,7 +382,7 @@ p {
 
 #navbar ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     list-style: none;
     margin: 0;
@@ -402,7 +402,7 @@ p {
 
 #nav-logo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -442,7 +442,7 @@ p {
 
 .primary div {
     aspect-ratio: 2/1;
-    width: calc(100% / 2);
+    width: calc(100% / 1);
     overflow: hidden;
     /* height: 65vh; */
     /* min-height: 35vh; */
@@ -469,54 +469,59 @@ p {
 
 #menu-feature {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+#menu-feature-text {
+    height: 30vh;
 }
 
 #events-feature {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column-reverse;
+    align-content: center;
 }
 
 #contact-feature {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-content: center;
 }
 
 #contact-feature-text {
-    padding-top: 1.25rem;
+    height: 60vh;
 }
 
 /* Menu section */
 
 #menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .menu-item {
     max-width: 100%;
     /* border-style: solid;
     border-width: 0 0 var(--border-standard) 0;
-    border-color: chartreuse; */
+    border-color: var(--secondary-colour) */
 }
 
 .menu-image {
     width: 50%;
 }
+
 .menu-image img {
     width: 100%;
     border-style: solid;
-    border-width: var(--border-half) var(--border-standard) var(--border-standard) 0;
+    border-width: var(--border-half);
     border-color: var(--secondary-colour);
 }
 
 .menu-text {
     width: 50%;
     border-style: solid;
-    border-width: var(--border-half) var(--border-standard) var(--border-standard) 0;
+    border-width: var(--border-half);
     border-color: var(--secondary-colour);
 }
 
@@ -545,12 +550,13 @@ p {
 
 #contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 #contact-map {
     /* min-width: 40%; */
-    height: 85vh;
+    height: 100vw;
+    width: 100vw;
     /* min-height: 65vh; */
     /* max-height: 90vh; */
     /* overflow: ; */
@@ -559,12 +565,12 @@ p {
 #contact-info {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    height: auto;
-    width: 40%;
+    height: 75rem;
+    /* width: 40%; */
     /* background-color: crimson; */
-    padding: 1em;
+    padding: 2em;
 }
 
 #sharing {
@@ -576,7 +582,13 @@ p {
 
 #credit-images {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    aspect-ratio: 1/1;
+    width: calc(100% / 1);
+}
+
+.credit-item {
+    max-width: 100%;
 }
 
 .credit-image {
@@ -615,12 +627,13 @@ p {
 
 #footer {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-content: center;
 }
 
 #upper-footer {
     height: 10rem;
+    text-align: center;
 }
 
 .footer-edge {
@@ -633,10 +646,9 @@ p {
 
 footer ul li {
     display: block;
-    padding-right: 6rem;
     padding-bottom: 3rem;
     text-decoration: none;
-    text-align: right;
+    text-align: center;
 }
 
 footer ul li a {
@@ -648,6 +660,5 @@ footer ul li a {
 #credits {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+    padding-top: 2rem;
 }

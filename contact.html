@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to the CSS. -->
     <link rel="stylesheet" media="only screen and (min-width: 901px)" href="./style/desktop.css" />
-    <!-- <link rel="stylesheet" media="only screen and (max-width: 900px)" href="./style/mobile.css" /> -->
+    <link rel="stylesheet" media="only screen and (max-width: 900px)" href="./style/mobile.css" />
     <!-- This is the title that will appear on the browser tab. -->
     <title>Find Us</title>
 </head>
@@ -48,7 +48,7 @@
     <!-- Main Body of what is on the page. -->
     <main class="border-tb">
         <!-- Contact -->
-        <div class="flex-row primary">
+        <div id="contact" class="primary">
             <!-- map -->
             <div id="contact-map">
                 <iframe
@@ -61,7 +61,7 @@
                 </iframe>
             </div>
             <!-- text -->
-            <div id="contact-info" class="flex-column flex-chc flex-cvc  text-pad-h1 text-pad-v1text-center">
+            <div id="contact-info" class="text-pad-h1 text-pad-v1 text-center">
                 <h2>Land ho!</h2>
                 <p>You can find Fancy Pants Cafe at:</p>
                 <p>488 South Road, Moorabbin</p>
@@ -81,25 +81,25 @@
         <!-- end of the contacts div -->
         
         <!-- Menu -->
-        <div class="flex-row flex-rhc primary border-tb">
+        <div id="menu-feature" class="primary border-tb">
             <div class="border-r">
                 <!-- image -->
                 <a>
                     <img src="./img/menu01.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
                 </a>
             </div>
-            <div class="text-center text-pad-h1 text-pad-v1">
+            <div id="menu-feature-text" class="text-center text-pad-h1 text-pad-v1">
                 <!-- text -->
                 <h2>Winter is coming... and so is our new menu!</h2>
                 <p>See what's new in our seasonally updated menu with our wicked winter treats.</p>
                 <!-- Button -->
-                <a href="./menu.html">Menu</a>
+                <a href="./menu.html#menu">Menu</a>
             </div>
         </div>
         <!-- end of the menu div -->
 
         <!-- Events -->
-        <div class="flex-row flex-rhc primary">
+        <div id="events-feature" class="primary">
             <div class="text-center text-pad-h1 text-pad-v1 border-r">
                 <!-- text -->
                 <h2>Events and functions</h2>
@@ -127,12 +127,12 @@
         <!-- end of the upper footer div -->
 
         <!-- Lower footer -->
-        <div class="flex-row flex-rhc">
+        <div id="footer">
             <div class="footer-edge"></div>
             <a class="flex-row flex-rhc footer-mid">
                 <img id="logo-large" src="./img/Fancy-Pants-Logo.svg" alt="Fancy Pants Cafe logo" aria-label="Logo by Robert Warrandyte.">
             </a>
-            <div id="credits" class="flex-column flex-cab flex-car footer-edge">
+            <div id="credits" class="footer-edge">
                 <ul>
                     <li><a href="./credits.html">Credits</a></li>
                     <li>&copy; Robert Warrandyte</a></li>
