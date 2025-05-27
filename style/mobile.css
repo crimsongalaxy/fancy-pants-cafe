@@ -328,10 +328,6 @@ p {
     overflow: auto;
     margin: auto;
     padding: 0;
-    /* background-color: aqua; */
-    /* border-style: solid;
-    border-width: 10px;
-    border-color: aqua; */
 }
 
 
@@ -358,9 +354,7 @@ p {
 /* Navbar */
 #navbar {
     max-width: 100%;
-    /* height: 10rem; */
     overflow: auto;
-    /* background-color: #ff0000; */
 }
 
 #navbar .nav-flex {
@@ -422,13 +416,6 @@ p {
     width: auto;
 }
 
-
-/* Info section */
-
-/* #info {
-    padding: 7rem;
-} */
-
 #tilda {
     margin: 1.6rem;
     font-size: 3.2rem;
@@ -436,36 +423,15 @@ p {
 
 /* Main section */
 
-/* .primary {
-    overflow: hidden;
-} */
-
 .primary div {
     aspect-ratio: 2/1;
     width: calc(100% / 1);
     overflow: hidden;
-    /* height: 65vh; */
-    /* min-height: 35vh; */
-    /* border-style: solid;
-    border-width: 25px 25px;
-    border-color: navy; */
-    /* flex: 1; */
 }
 
 .primary img {
     height: 100%;
-    /* max-width: 100%; */
 }
-
-/* #test {
-    min-height: 40vh;
-    min-width: 50vh;
-} */
-
-/* .primary img {
-    min-height: 100%;
-    max-height: 70vh;
-} */
 
 #menu-feature {
     display: flex;
@@ -502,9 +468,6 @@ p {
 
 .menu-item {
     max-width: 100%;
-    /* border-style: solid;
-    border-width: 0 0 var(--border-standard) 0;
-    border-color: var(--secondary-colour) */
 }
 
 .menu-image {
@@ -529,37 +492,19 @@ p {
     padding: 1em;
 }
 
-
-/* Contact section */
-
-/* #contact-map {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-} */
-
 #contact {
     display: flex;
     flex-direction: column;
 }
 
 #contact-map {
-    /* min-width: 40%; */
     height: 100vw;
     width: 100vw;
-    /* min-height: 65vh; */
-    /* max-height: 90vh; */
-    /* overflow: ; */
+}
+
+.contact-map-frame {
+    height: 100%;
+    width: 100%;
 }
 
 #contact-info {
@@ -568,8 +513,6 @@ p {
     justify-content: center;
     align-items: center;
     height: 75rem;
-    /* width: 40%; */
-    /* background-color: crimson; */
     padding: 2em;
 }
 
