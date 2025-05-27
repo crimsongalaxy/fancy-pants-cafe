@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to the CSS. -->
     <link rel="stylesheet" media="only screen and (min-width: 901px)" href="./style/desktop.css" />
-    <!-- <link rel="stylesheet" media="only screen and (max-width: 900px)" href="./style/mobile.css" /> -->
+    <link rel="stylesheet" media="only screen and (max-width: 900px)" href="./style/mobile.css" />
     <!-- This is the title that will appear on the browser tab. -->
     <title>Index</title>
 </head>
@@ -48,25 +48,25 @@
     <!-- Main Body of what is on the page. -->
     <main class="border-tb">
         <!-- Menu -->
-        <div class="flex-row flex-rhc primary border-b">
+        <div id="menu-feature" class="primary border-b">
             <div class="border-r">
                 <!-- image -->
                 <a>
                     <img src="./img/menu03.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
                 </a>
             </div>
-            <div class="text-center text-pad-h1 text-pad-v1">
+            <div id="menu-feature-text" class="text-center text-pad-h1 text-pad-v1">
                 <!-- text -->
                 <h2>Winter is coming... and so is our new menu!</h2>
                 <p>See what's new in our seasonally updated menu with our wicked winter treats.</p>
                 <!-- Button -->
-                <a href="./menu.html">Menu</a>
+                <a href="./menu.html#menu">Menu</a>
             </div>
         </div>
         <!-- end of the menu div -->
 
         <!-- Events -->
-        <div class="flex-row flex-rhc primary border-b">
+        <div id="events-feature" class="primary border-b">
             <div class="text-center text-pad-h1 text-pad-v1 border-r">
                 <!-- text -->
                 <h2>Events and functions</h2>
@@ -83,20 +83,20 @@
         <!-- end of the events div -->
 
         <!-- Contact -->
-        <div class="flex-row flex-rhc primary">
+        <div id="contact-feature" class="primary">
             <div class="border-r">
                 <!-- image -->
                 <a>
                     <img src="./img/contact02.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
                 </a>
             </div>
-            <div class="flex-column flex-chc text-center text-pad-h1 text-pad-v1 border-r">
+            <div id="contact-feature-text" class="flex-column flex-chc text-center text-pad-h1 text-pad-v1 border-r">
                 <!-- text -->
                 <h2>Where for art thou?</h2>
                 <p>To find us you need to follow the second star to the right, and continue straight on until morning.</p>
-                <p>Or... click this button to see a map.
+                <p>Or... click this button to see a map.</p>
                 <!-- button -->
-                <a href="./contact.html">Find Us</a>
+                <a href="./contact.html#contact-map">Find Us</a>
                 <p>Beware of ninjas. Good luck, traveler!</p>
                 <p>Open hours:</p>
                 <p>7am - 8pm</p>
@@ -116,12 +116,12 @@
         <!-- end of the upper footer div -->
 
         <!-- Lower footer -->
-        <div class="flex-row flex-rhc">
+        <div id="footer">
             <div class="footer-edge"></div>
             <a class="flex-row flex-rhc footer-mid">
                 <img id="logo-large" src="./img/Fancy-Pants-Logo.svg" alt="Fancy Pants Cafe logo" aria-label="Logo by Robert Warrandyte.">
             </a>
-            <div id="credits" class="flex-column flex-cab flex-car footer-edge">
+            <div id="credits" class="footer-edge">
                 <ul>
                     <li><a href="./credits.html">Credits</a></li>
                     <li>&copy; Robert Warrandyte</a></li>

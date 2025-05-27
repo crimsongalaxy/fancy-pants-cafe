@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to the CSS. -->
     <link rel="stylesheet" media="only screen and (min-width: 901px)" href="./style/desktop.css" />
-    <!-- <link rel="stylesheet" media="only screen and (max-width: 900px)" href="./style/mobile.css" /> -->
+    <link rel="stylesheet" media="only screen and (max-width: 900px)" href="./style/mobile.css" />
     <!-- This is the title that will appear on the browser tab. -->
     <title>Menu</title>
 </head>
@@ -48,11 +48,11 @@
     <!-- Main Body of what is on the page. -->
     <main class="border-tb">
         <!-- Menu -->
-        <div class="flex-row">
-            <div class="flex-column flex-fill border-r">
+        <div id="menu">
+            <div class="flex-column flex-fill">
                 <!-- menu item 01 -->
                 <div class="flex-row menu-item">
-                    <div class="menu-image border-r">
+                    <div class="menu-image">
                         <a>
                             <img src="./img/cafe-latte.jpg" alt="place-holder image."  aria-label="Source: Pixabay.com">
                         </a>
@@ -68,7 +68,7 @@
                 
                 <!-- menu item 02 -->
                 <div class="flex-row menu-item">
-                    <div class="menu-text border-r">
+                    <div class="menu-text">
                         <div>
                             <h2>Cappuccino</h2>
                             <p>Brief description</p>
@@ -84,7 +84,7 @@
                 
                 <!-- menu item 03 -->
                 <div class="flex-row menu-item">
-                    <div class="menu-image border-r">
+                    <div class="menu-image">
                         <a>
                             <img src="./img/long-black.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
                         </a>
@@ -100,7 +100,7 @@
                 
                 <!-- menu item 04 -->
                 <div class="flex-row menu-item">
-                    <div class="menu-text border-r">
+                    <div class="menu-text">
                         <div>
                             <h2>Hot Chocolate</h2>
                             <p>Brief description</p>
@@ -120,10 +120,10 @@
             <!-- COLUMN BREAK 1/2 -->
             
 
-            <div class="flex-column flex-fill border-r">
+            <div class="flex-column flex-fill">
                 <!-- menu item 05 -->
                 <div class="flex-row menu-item">
-                    <div class="menu-image border-r">
+                    <div class="menu-image">
                         <a>
                             <img src="./img/chicken-parma.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
                         </a>
@@ -139,7 +139,7 @@
                 
                 <!-- menu item 06 -->
                 <div class="flex-row menu-item">
-                    <div class="menu-text border-r">
+                    <div class="menu-text">
                         <div>
                             <h2>Sweet BBQ Pork</h2>
                             <p>Brief description</p>
@@ -155,7 +155,7 @@
                 
                 <!-- menu item 07 -->
                 <div class="flex-row menu-item">
-                    <div class="menu-image border-r">
+                    <div class="menu-image">
                         <a>
                             <img src="./img/hamburger.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
                         </a>
@@ -171,7 +171,7 @@
                 
                 <!-- menu item 08 -->
                 <div class="flex-row menu-item">
-                    <div class="menu-text border-r">
+                    <div class="menu-text">
                         <div>
                             <h2>Pizza</h2>
                             <p>Brief description</p>
@@ -194,7 +194,7 @@
             <div class="flex-column flex-fill">
                 <!-- menu item 09 -->
                 <div class="flex-row menu-item">
-                    <div class="menu-image border-r">
+                    <div class="menu-image">
                         <a>
                             <img src="./img/choc-muffin.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
                         </a>
@@ -210,7 +210,7 @@
                 
                 <!-- menu item 10 -->
                 <div class="flex-row menu-item">
-                    <div class="menu-text border-r">
+                    <div class="menu-text">
                         <div>
                             <h2>Red Velvet Cake</h2>
                             <p>Brief description</p>
@@ -226,7 +226,7 @@
                 
                 <!-- menu item 11 -->
                 <div class="flex-row menu-item">
-                    <div class="menu-image border-r">
+                    <div class="menu-image">
                         <a>
                             <img src="./img/giner-bread-man.jpg" alt="place-holder image." aria-label="Source: Pixabay.com">
                         </a>
@@ -242,7 +242,7 @@
                 
                 <!-- menu item 12 -->
                 <div class="flex-row menu-item">
-                    <div class="menu-text border-r">
+                    <div class="menu-text">
                         <div>
                             <h2>Apple Crumble</h2>
                             <p>Brief description</p>
@@ -261,7 +261,7 @@
         <!-- end of the menu div -->
 
         <!-- Events -->
-        <div class="flex-row flex-rhc primary border-b">
+        <div id="events-feature" class="primary border-b">
             <div class="border-r">
                 <!-- image -->
                 <a>
@@ -278,14 +278,14 @@
         <!-- end of the events div -->
 
         <!-- Contact -->
-        <div class="flex-row flex-rhc primary">
-            <div class="flex-column flex-chc text-center text-pad-h1 text-pad-v1 border-r">
+        <div id="contact-feature" class="primary">
+            <div id="contact-feature-text" class="flex-column flex-chc text-center text-pad-h1 text-pad-v1 border-r">
                 <!-- text -->
                 <h2>Where for art thou?</h2>
                 <p>To find us you need to follow the second star to the right, and continue straight on until morning.</p>
                 <p>Or... click this button to see a map.</p>
                 <!-- button -->
-                <a href="./contact.html">Find Us</a>
+                <a href="./contact.html#contact-map">Find Us</a>
                 <p>Beware of ninjas. Good luck, traveler!</p>
                 <p>Open hours:</p>
                 <p>7am - 8pm</p>
@@ -311,12 +311,12 @@
         <!-- end of the upper footer div -->
 
         <!-- Lower footer -->
-        <div class="flex-row flex-rhc">
+        <div id="footer">
             <div class="footer-edge"></div>
             <a class="flex-row flex-rhc footer-mid">
                 <img id="logo-large" src="./img/Fancy-Pants-Logo.svg" alt="Fancy Pants Cafe logo" aria-label="Logo by Robert Warrandyte.">
             </a>
-            <div id="credits" class="flex-column flex-cab flex-car footer-edge">
+            <div id="credits" class="footer-edge">
                 <ul>
                     <li><a href="./credits.html">Credits</a></li>
                     <li>&copy; Robert Warrandyte</a></li>
