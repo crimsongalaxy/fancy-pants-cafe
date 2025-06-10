@@ -483,9 +483,19 @@ p {
 
 .menu-text {
     width: 50%;
+    aspect-ratio: 1/1;
     border-style: solid;
     border-width: var(--border-half);
     border-color: var(--secondary-colour);
+    overflow: hidden;
+}
+
+.menu-text h2 {
+    margin: 1rem 0;
+}
+
+.menu-text p {
+    margin: 1rem 0;
 }
 
 .menu-text div {
@@ -562,6 +572,31 @@ p {
     border-color: var(--secondary-colour);
 }
 
+.btn {
+    margin: 2rem;
+    padding: 0.25rem 2rem;
+    border-width: 0.25rem;
+    border-style: solid;
+    border-color: var(--brand-colour);
+    border-radius: 2rem;
+    background-color: var(--brand-colour);
+    color: var(--primary-colour);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn:hover {
+    margin: 2rem;
+    padding: 0.25rem 2rem;
+    border-width: 0.25rem;
+    border-style: solid;
+    border-color: var(--brand-colour);
+    border-radius: 2rem;
+    background-color: var(--primary-colour);
+    color: var(--brand-colour);
+    text-decoration: none;
+}
+
 
 
 
@@ -604,4 +639,29 @@ footer ul li a {
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
+}
+
+#credits a {
+    margin: 2rem 0;
+    padding: 0.25rem 2rem;
+    border-width: 0.25rem;
+    border-style: solid;
+    border-color: var(--brand-colour);
+    border-radius: 2rem;
+    background-color: var(--brand-colour);
+    color: var(--primary-colour);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#credits a:hover {
+    margin: 2rem 0;
+    padding: 0.25rem 2rem;
+    border-width: 0.25rem;
+    border-style: solid;
+    border-color: var(--brand-colour);
+    border-radius: 2rem;
+    background-color: var(--primary-colour);
+    color: var(--brand-colour);
+    text-decoration: none;
 }

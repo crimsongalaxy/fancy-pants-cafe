@@ -485,6 +485,14 @@ p {
     border-color: var(--secondary-colour);
 }
 
+.menu-text h2 {
+    margin: 1rem 0;
+}
+
+.menu-text p {
+    margin: 1rem 0;
+}
+
 .menu-text div {
     padding: 1em;
 }
@@ -556,6 +564,30 @@ p {
     border-color: var(--secondary-colour);
 }
 
+.btn {
+    margin: 2rem;
+    padding: 0.25rem 2rem;
+    border-width: 0.25rem;
+    border-style: solid;
+    border-color: var(--brand-colour);
+    border-radius: 2rem;
+    background-color: var(--brand-colour);
+    color: var(--primary-colour);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn:hover {
+    margin: 2rem;
+    padding: 0.25rem 2rem;
+    border-width: 0.25rem;
+    border-style: solid;
+    border-color: var(--brand-colour);
+    border-radius: 2rem;
+    background-color: var(--primary-colour);
+    color: var(--brand-colour);
+    text-decoration: none;
+}
 
 
 
@@ -584,14 +616,12 @@ footer ul li {
     display: block;
     padding-right: 6rem;
     padding-bottom: 3rem;
-    text-decoration: none;
     text-align: right;
 }
 
 footer ul li a {
     color: var(--brand-colour);
     font-weight: bold;
-    text-decoration: none;
 }
 
 #credits {
@@ -599,4 +629,29 @@ footer ul li a {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+#credits a {
+    margin: 2rem 0;
+    padding: 0.25rem 2rem;
+    border-width: 0.25rem;
+    border-style: solid;
+    border-color: var(--brand-colour);
+    border-radius: 2rem;
+    background-color: var(--brand-colour);
+    color: var(--primary-colour);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#credits a:hover {
+    margin: 2rem 0;
+    padding: 0.25rem 2rem;
+    border-width: 0.25rem;
+    border-style: solid;
+    border-color: var(--brand-colour);
+    border-radius: 2rem;
+    background-color: var(--primary-colour);
+    color: var(--brand-colour);
+    text-decoration: none;
 }
