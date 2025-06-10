@@ -485,6 +485,14 @@ p {
     border-color: var(--secondary-colour);
 }
 
+.menu-text h2 {
+    margin: 1rem 0;
+}
+
+.menu-text p {
+    margin: 1rem 0;
+}
+
 .menu-text div {
     padding: 1em;
 }

@@ -483,9 +483,19 @@ p {
 
 .menu-text {
     width: 50%;
+    aspect-ratio: 1/1;
     border-style: solid;
     border-width: var(--border-half);
     border-color: var(--secondary-colour);
+    overflow: hidden;
+}
+
+.menu-text h2 {
+    margin: 1rem 0;
+}
+
+.menu-text p {
+    margin: 1rem 0;
 }
 
 .menu-text div {
